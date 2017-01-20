@@ -3,6 +3,12 @@
 
 var DRIVY = DRIVY || {};
 
+function mySubmitFunction()
+{
+  return false;
+}
+
+
 (function starter () {
   var render = function render (actors) {
     var template = document.querySelector('#template').innerHTML;

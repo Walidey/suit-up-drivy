@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>CSS/HTML Workshop with Drivy</title>
-  </head>
+ <header><h1>CSS/HTML Workshop with Drivy</h1></header>
+    <link rel="stylesheet" href="style.css" />
+    <div id="form">
+
+    <div class="fish" id="fish"></div>
+    <div class="fish" id="fish2"></div>
+     <form id="waterform" onsubmit="return mySubmitFunction()" method="post">
+
+  
+  </header>
   <body>
-    <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
+    <div id="car" class = "formgroup">
+    <label>Car model*</label> 
+    <input class="model" type="text"/>
+      <label>Price by day*</label> 
+      <input class="price-by-day" type="number"/>
+       <label>Price by km*</label> 
+      <input class="price-by-km" type="number"/>
     </div>
     <div id="rental">
-      <input class="begin" type="date" placeholder="Rental begin date"/>
-      <input class="end" type="date" placeholder="Rental end date"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
+      
+      <label >Rental begin date*</label> 
+      <input class="begin" type="date" />
+      <label>Rental end date*</label> 
+      <input class="end" type="date"/>
+      <label>Distance in km*</label> 
+      <input class="distance" type="number" />
+       <label>Deductible option</label>
+      <input id="checkbox" class="option" type="checkbox" />
+      
     </div>
-    <button id="compute">Compute</button>
+    <button id="compute">Compute 
+    
+    </button>
     <div id="actors"></div>
     <script id="template" type="x-tmpl-mustache">
       {{#actors}}
